@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lịch sự kiện · EduHub Web</title>
+    <meta name="description" content="Lịch các sự kiện sắp tới của câu lạc bộ sinh viên Trường Đại học Đồng Tháp, học kỳ I năm học 2026–2027.">
+    <!-- Open Graph: thay "ten-tai-khoan" bằng tên tài khoản GitHub sau khi bật GitHub Pages -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="EduHub Web">
+    <meta property="og:title" content="Lịch sự kiện · EduHub Web">
+    <meta property="og:description" content="Lịch các sự kiện sắp tới của câu lạc bộ sinh viên Trường Đại học Đồng Tháp, học kỳ I năm học 2026–2027.">
+    <meta property="og:url" content="https://ten-tai-khoan.github.io/eduhub-web/events.html">
+    <meta property="og:image" content="https://ten-tai-khoan.github.io/eduhub-web/assets/og-image.png">
+    <meta property="og:locale" content="vi_VN">
+    <meta name="theme-color" content="#001D45">
+    <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+    <!-- Ch02: một tệp CSS duy nhất, main.css tự @import các lớp còn lại -->
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#noi-dung">Bỏ qua, đến nội dung chính</a>
+
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a class="brand" href="index.html">
+          <img class="brand__logo" src="assets/logo.svg" alt="" width="48" height="48">
+          <span class="brand__name">Edu<span>Hub</span></span>
+        </a>
+        <nav class="site-nav" aria-label="Điều hướng chính">
+          <ul class="site-nav__list">
+          <li><a class="site-nav__link" href="index.html">Trang chủ</a></li>
+          <li><a class="site-nav__link" href="events.html" aria-current="page">Sự kiện</a></li>
+          <li><a class="site-nav__link" href="index.html#cau-lac-bo">Câu lạc bộ</a></li>
+          <li><a class="site-nav__link" href="register.html">Đăng ký thành viên</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="noi-dung" class="container page">
+      <h1>Lịch sự kiện</h1>
+      <p class="page__intro">Học kỳ I, năm học 2026–2027. Sự kiện có nhãn <strong>Sắp hết chỗ</strong> chỉ còn dưới 20% số chỗ — đăng ký sớm nhé.</p>
+
+      <section aria-labelledby="danh-sach">
+        <h2 id="danh-sach" class="section__head">Tất cả sự kiện</h2>
+        <!-- Ch03 sẽ thay các card tĩnh này bằng dữ liệu từ GET /api/events -->
+        <div class="card-grid">
+        <article class="card event-card">
+          <img class="card__media" src="assets/club-tin-hoc.svg" alt="Biểu tượng CLB Tin học" width="640" height="360" loading="lazy">
+          <div class="card__body">
+            <p class="card__meta"><span class="tag">CLB Tin học</span> <span class="badge badge--hot">Sắp hết chỗ</span></p>
+            <h3 class="card__title"><a href="event-detail.html">Workshop: Làm website đầu tiên với HTML</a></h3>
+            <p class="event-card__info"><time datetime="2026-10-17T07:30+07:00">07:30, thứ Bảy 17/10/2026</time> · Phòng máy B1.203</p>
+            <p class="card__text">Hai giờ thực hành: viết trang giới thiệu bản thân và đưa lên GitHub Pages.</p>
+            <p class="event-card__seats">Còn 12/60 chỗ</p>
+          </div>
+        </article>
+
+        <article class="card event-card">
+          <img class="card__media" src="assets/club-tinh-nguyen.svg" alt="Biểu tượng CLB Tình nguyện" width="640" height="360" loading="lazy">
+          <div class="card__body">
+            <p class="card__meta"><span class="tag">CLB Tình nguyện</span></p>
+            <h3 class="card__title"><a href="events.html">Ngày hội Hiến máu tình nguyện</a></h3>
+            <p class="event-card__info"><time datetime="2026-10-24T07:00+07:00">07:00, thứ Bảy 24/10/2026</time> · Hội trường lớn</p>
+            <p class="card__text">Mỗi giọt máu cho đi, một cuộc đời ở lại. Có giấy chứng nhận và quà cho người tham gia.</p>
+            <p class="event-card__seats">Còn 140/300 chỗ</p>
+          </div>
+        </article>
+
+        <article class="card event-card">
+          <img class="card__media" src="assets/club-tieng-anh.svg" alt="Biểu tượng CLB Tiếng Anh" width="640" height="360" loading="lazy">
+          <div class="card__body">
+            <p class="card__meta"><span class="tag">CLB Tiếng Anh</span> <span class="badge badge--hot">Sắp hết chỗ</span></p>
+            <h3 class="card__title"><a href="events.html">English Speaking Night: Halloween</a></h3>
+            <p class="event-card__info"><time datetime="2026-10-31T18:30+07:00">18:30, thứ Bảy 31/10/2026</time> · Sảnh nhà A1</p>
+            <p class="card__text">Trò chơi, hoá trang và luyện nói tiếng Anh cùng sinh viên các khoa.</p>
+            <p class="event-card__seats">Còn 6/80 chỗ</p>
+          </div>
+        </article>
+
+        <article class="card event-card">
+          <img class="card__media" src="assets/club-bong-da.svg" alt="Biểu tượng CLB Bóng đá" width="640" height="360" loading="lazy">
+          <div class="card__body">
+            <p class="card__meta"><span class="tag">CLB Bóng đá</span></p>
+            <h3 class="card__title"><a href="events.html">Giải bóng đá sinh viên Khoa Công nghệ và Kỹ thuật 2026</a></h3>
+            <p class="event-card__info"><time datetime="2026-11-08T07:00+07:00">07:00, Chủ nhật 08/11/2026</time> · Sân bóng đá của trường</p>
+            <p class="card__text">Tám đội bóng của các lớp tranh cúp, cổ động viên được tặng áo đồng phục.</p>
+            <p class="event-card__seats">Còn 64/160 chỗ</p>
+          </div>
+        </article>
+
+        <article class="card event-card">
+          <img class="card__media" src="assets/club-am-nhac.svg" alt="Biểu tượng CLB Âm nhạc" width="640" height="360" loading="lazy">
+          <div class="card__body">
+            <p class="card__meta"><span class="tag">CLB Âm nhạc</span></p>
+            <h3 class="card__title"><a href="events.html">Đêm nhạc Tri ân thầy cô 20/11</a></h3>
+            <p class="event-card__info"><time datetime="2026-11-14T19:00+07:00">19:00, thứ Bảy 14/11/2026</time> · Hội trường lớn</p>
+            <p class="card__text">Các tiết mục guitar, thanh nhạc và hợp xướng dành tặng thầy cô.</p>
+            <p class="event-card__seats">Còn 215/400 chỗ</p>
+          </div>
+        </article>
+
+        <article class="card event-card">
+          <img class="card__media" src="assets/club-ky-nang-mem.svg" alt="Biểu tượng CLB Kỹ năng mềm" width="640" height="360" loading="lazy">
+          <div class="card__body">
+            <p class="card__meta"><span class="tag">CLB Kỹ năng mềm</span> <span class="badge badge--hot">Sắp hết chỗ</span></p>
+            <h3 class="card__title"><a href="events.html">Kỹ năng thuyết trình trước đám đông</a></h3>
+            <p class="event-card__info"><time datetime="2026-11-21T14:00+07:00">14:00, thứ Bảy 21/11/2026</time> · Phòng B2.105</p>
+            <p class="card__text">Luyện cách mở đầu, dùng giọng nói và ánh mắt, xử lý câu hỏi khó.</p>
+            <p class="event-card__seats">Còn 9/100 chỗ</p>
+          </div>
+        </article>
+
+        <article class="card event-card">
+          <img class="card__media" src="assets/club-tin-hoc.svg" alt="Biểu tượng CLB Tin học" width="640" height="360" loading="lazy">
+          <div class="card__body">
+            <p class="card__meta"><span class="tag">CLB Tin học</span></p>
+            <h3 class="card__title"><a href="events.html">Olympic Tin học sinh viên cấp trường</a></h3>
+            <p class="event-card__info"><time datetime="2026-12-05T08:00+07:00">08:00, thứ Bảy 05/12/2026</time> · Phòng máy B1.201–B1.203</p>
+            <p class="card__text">Thi giải thuật cá nhân trong 3 giờ, chọn đội tuyển dự thi cấp quốc gia.</p>
+            <p class="event-card__seats">Còn 47/120 chỗ</p>
+          </div>
+        </article>
+
+        <article class="card event-card">
+          <img class="card__media" src="assets/club-tinh-nguyen.svg" alt="Biểu tượng CLB Tình nguyện" width="640" height="360" loading="lazy">
+          <div class="card__body">
+            <p class="card__meta"><span class="tag">CLB Tình nguyện</span></p>
+            <h3 class="card__title"><a href="events.html">Ra quân Chiến dịch Xuân tình nguyện 2027</a></h3>
+            <p class="event-card__info"><time datetime="2026-12-13T07:00+07:00">07:00, Chủ nhật 13/12/2026</time> · Sân trường</p>
+            <p class="card__text">Gói quà Tết, sửa nhà tình thương và dạy học cho trẻ em vùng sâu.</p>
+            <p class="event-card__seats">Còn 120/200 chỗ</p>
+          </div>
+        </article>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="lich-tong-hop">
+        <h2 id="lich-tong-hop" class="section__head">Lịch tổng hợp</h2>
+        <!-- Bảng rộng hơn màn hình điện thoại: chỉ khung này cuộn ngang, cả trang thì không -->
+        <div class="table-wrap" tabindex="0">
+          <table class="table">
+            <caption>Sự kiện sắp tới của các câu lạc bộ (giờ Việt Nam)</caption>
+            <thead>
+              <tr>
+                <th scope="col">Thời gian</th>
+                <th scope="col">Sự kiện</th>
+                <th scope="col">Câu lạc bộ</th>
+                <th scope="col">Địa điểm</th>
+                <th scope="col">Số chỗ</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><time datetime="2026-10-17T07:30+07:00">07:30, T7 17/10/2026</time></td>
+                <th scope="row"><a href="event-detail.html">Workshop: Làm website đầu tiên với HTML</a></th>
+                <td>CLB Tin học</td>
+                <td>Phòng máy B1.203</td>
+                <td>60</td>
+              </tr>
+              <tr>
+                <td><time datetime="2026-10-24T07:00+07:00">07:00, T7 24/10/2026</time></td>
+                <th scope="row">Ngày hội Hiến máu tình nguyện</th>
+                <td>CLB Tình nguyện</td>
+                <td>Hội trường lớn</td>
+                <td>300</td>
+              </tr>
+              <tr>
+                <td><time datetime="2026-10-31T18:30+07:00">18:30, T7 31/10/2026</time></td>
+                <th scope="row">English Speaking Night: Halloween</th>
+                <td>CLB Tiếng Anh</td>
+                <td>Sảnh nhà A1</td>
+                <td>80</td>
+              </tr>
+              <tr>
+                <td><time datetime="2026-11-08T07:00+07:00">07:00, CN 08/11/2026</time></td>
+                <th scope="row">Giải bóng đá sinh viên Khoa Công nghệ và Kỹ thuật 2026</th>
+                <td>CLB Bóng đá</td>
+                <td>Sân bóng đá của trường</td>
+                <td>160</td>
+              </tr>
+              <tr>
+                <td><time datetime="2026-11-14T19:00+07:00">19:00, T7 14/11/2026</time></td>
+                <th scope="row">Đêm nhạc Tri ân thầy cô 20/11</th>
+                <td>CLB Âm nhạc</td>
+                <td>Hội trường lớn</td>
+                <td>400</td>
+              </tr>
+              <tr>
+                <td><time datetime="2026-11-21T14:00+07:00">14:00, T7 21/11/2026</time></td>
+                <th scope="row">Kỹ năng thuyết trình trước đám đông</th>
+                <td>CLB Kỹ năng mềm</td>
+                <td>Phòng B2.105</td>
+                <td>100</td>
+              </tr>
+              <tr>
+                <td><time datetime="2026-12-05T08:00+07:00">08:00, T7 05/12/2026</time></td>
+                <th scope="row">Olympic Tin học sinh viên cấp trường</th>
+                <td>CLB Tin học</td>
+                <td>Phòng máy B1.201–B1.203</td>
+                <td>120</td>
+              </tr>
+              <tr>
+                <td><time datetime="2026-12-13T07:00+07:00">07:00, CN 13/12/2026</time></td>
+                <th scope="row">Ra quân Chiến dịch Xuân tình nguyện 2027</th>
+                <td>CLB Tình nguyện</td>
+                <td>Sân trường</td>
+                <td>200</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="5">Tổng cộng 8 sự kiện · Lịch có thể thay đổi, theo dõi trang này để cập nhật.</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </section>
+
+      <p class="cta section">
+        <span>Muốn tham gia? Đăng ký thành viên EduHub trước.</span>
+        <a class="btn btn--primary" href="register.html">Đăng ký thành viên</a>
+      </p>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <p>EduHub Web · Trường Đại học Đồng Tháp · 783 Phạm Hữu Lầu, Cao Lãnh, Đồng Tháp</p>
+        <p>Liên hệ: <a href="mailto:eduhub@dthu.edu.vn">eduhub@dthu.edu.vn</a></p>
+        <p><small>Bài thực hành môn IN4529 — Lập trình Front End.</small></p>
+      </div>
+    </footer>
+  </body>
+</html>

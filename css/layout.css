@@ -1,0 +1,30 @@
+/* ==========================================================================
+   layout.css — khung trang: container, header, footer, lưới nội dung
+   Mobile-first: CSS ngoài @media là giao diện điện thoại.
+   Chỉ dùng 2 mốc: @media (width >= 40rem) và @media (width >= 64rem).
+   Tra tên class trong README.md (mục "Class có sẵn trong HTML").
+   ========================================================================== */
+
+/* TODO(ch2-T3): .container — rộng tối đa --container-max, căn giữa (margin-inline: auto),
+   padding-inline --space-4, từ 40rem tăng lên --space-6 */
+
+/* TODO(ch2-T3): .site-header nền --color-header-bg; từ 40rem: position: sticky; top 0.
+   .site-header__inner và .site-nav__list dùng Flexbox (flex-wrap: wrap, gap, align-items: center,
+   justify-content: space-between); bỏ dấu chấm của list */
+
+/* TODO(ch2-T3): .site-footer nền tối, chữ nhỏ; .site-footer__inner cột dọc, từ 64rem thành hàng ngang */
+
+/* TODO(ch2-T3): .page (padding trên dưới), .page--narrow (hẹp lại cho form), .page__intro (tối đa 60ch),
+   .section, .section__head (Flexbox: tiêu đề trái, link "Xem tất cả" phải) */
+
+/* TODO(ch2-T3): .hero — Grid 1 cột, nền gradient từ primary tới màu tối, chữ trắng, bo góc lớn;
+   từ 64rem: grid-template-columns 2 cột */
+
+/* TODO(ch2-T4): .card-grid — display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(min(16rem, 100%), 1fr)); gap; bỏ list-style.
+   KHÔNG dùng media query cho lưới này. */
+
+/* TODO(ch2-T5): .detail — Grid 1 cột; từ 64rem: 2 cột (2fr và 1fr) với grid-template-areas
+     "head head" "media info" "content info" "prep info" "foot foot".
+   Gán grid-area cho .detail__head/__media/__info/__content/__prep/__foot CHỈ BÊN TRONG media query.
+   .detail__info: align-self: start; position: sticky; top chừa chỗ cho header */

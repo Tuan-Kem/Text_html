@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#003F87"/>
+  <circle cx="1060" cy="110" r="220" fill="#00C4CC" fill-opacity="0.25"/>
+  <circle cx="120" cy="600" r="220" fill="#001D45" fill-opacity="0.6"/>
+  <text x="100" y="300" font-family="system-ui, sans-serif" font-size="110" font-weight="800" fill="#FFFFFF">EduHub Web</text>
+  <text x="100" y="390" font-family="system-ui, sans-serif" font-size="44" fill="#F0F7FF">CLB &amp; sự kiện sinh viên · Trường ĐH Đồng Tháp</text>
+</svg>

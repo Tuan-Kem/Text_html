@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Workshop: Làm website đầu tiên với HTML · EduHub Web</title>
+    <meta name="description" content="Workshop 2 giờ của CLB Tin học: viết trang web giới thiệu bản thân bằng HTML và đưa lên GitHub Pages. Thứ Bảy 17/10/2026, phòng máy B1.203.">
+    <!-- Open Graph: thay "ten-tai-khoan" bằng tên tài khoản GitHub sau khi bật GitHub Pages -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="EduHub Web">
+    <meta property="og:title" content="Workshop: Làm website đầu tiên với HTML · EduHub Web">
+    <meta property="og:description" content="Workshop 2 giờ của CLB Tin học: viết trang web giới thiệu bản thân bằng HTML và đưa lên GitHub Pages. Thứ Bảy 17/10/2026, phòng máy B1.203.">
+    <meta property="og:url" content="https://ten-tai-khoan.github.io/eduhub-web/event-detail.html">
+    <meta property="og:image" content="https://ten-tai-khoan.github.io/eduhub-web/assets/og-image.png">
+    <meta property="og:locale" content="vi_VN">
+    <meta name="theme-color" content="#001D45">
+    <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+    <!-- Ch02: một tệp CSS duy nhất, main.css tự @import các lớp còn lại -->
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#noi-dung">Bỏ qua, đến nội dung chính</a>
+
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a class="brand" href="index.html">
+          <img class="brand__logo" src="assets/logo.svg" alt="" width="48" height="48">
+          <span class="brand__name">Edu<span>Hub</span></span>
+        </a>
+        <nav class="site-nav" aria-label="Điều hướng chính">
+          <ul class="site-nav__list">
+          <li><a class="site-nav__link" href="index.html">Trang chủ</a></li>
+          <li><a class="site-nav__link" href="events.html">Sự kiện</a></li>
+          <li><a class="site-nav__link" href="index.html#cau-lac-bo">Câu lạc bộ</a></li>
+          <li><a class="site-nav__link" href="register.html">Đăng ký thành viên</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="noi-dung" class="container page">
+      <article class="detail">
+        <header class="detail__head">
+          <a class="back-link" href="events.html">← Quay lại lịch sự kiện</a>
+          <p class="card__meta"><span class="tag">CLB Tin học</span> <span class="badge badge--hot">Sắp hết chỗ</span></p>
+          <h1>Workshop: Làm website đầu tiên với HTML</h1>
+          <p class="detail__organizer">Do <strong>CLB Tin học</strong> tổ chức</p>
+        </header>
+
+        <img class="detail__media" src="assets/club-tin-hoc.svg" alt="Biểu tượng CLB Tin học: dấu thẻ HTML trên nền xanh" width="640" height="360">
+
+        <section class="detail__info info-card" aria-labelledby="thong-tin">
+          <h2 id="thong-tin">Thông tin chung</h2>
+          <dl>
+            <dt>Thời gian</dt>
+            <dd><time datetime="2026-10-17T07:30+07:00">07:30 – 09:30, thứ Bảy 17/10/2026</time></dd>
+            <dt>Địa điểm</dt>
+            <dd>Phòng máy B1.203, Trường Đại học Đồng Tháp</dd>
+            <dt>Số chỗ</dt>
+            <dd>60 (còn 12 chỗ)</dd>
+            <dt>Chi phí</dt>
+            <dd>Miễn phí</dd>
+          </dl>
+        </section>
+
+        <section class="detail__content prose" aria-labelledby="noi-dung-workshop">
+          <h2 id="noi-dung-workshop">Nội dung</h2>
+          <p>
+            Buổi workshop dành cho sinh viên chưa từng viết code. Sau hai giờ, mỗi bạn có
+            một trang web giới thiệu bản thân chạy trên Internet.
+          </p>
+          <ol>
+            <li>Trình duyệt hiển thị một trang web như thế nào.</li>
+            <li>Viết trang HTML đầu tiên trong VS Code.</li>
+            <li>Thêm ảnh, liên kết và danh sách sở thích.</li>
+            <li>Đưa trang lên GitHub Pages và chia sẻ đường link.</li>
+          </ol>
+        </section>
+
+        <section class="detail__prep prose" aria-labelledby="chuan-bi">
+          <h2 id="chuan-bi">Cần chuẩn bị</h2>
+          <ul>
+            <li>Máy tính xách tay (nếu có) đã cài VS Code.</li>
+            <li>Một tài khoản GitHub — tạo miễn phí tại <a href="https://github.com/signup">github.com</a>.</li>
+            <li>Một tấm ảnh chân dung nhỏ để đưa vào trang.</li>
+          </ul>
+        </section>
+
+        <footer class="detail__foot cta">
+          <p>Chỉ còn 12 chỗ — giữ chỗ ngay hôm nay.</p>
+          <a class="btn btn--primary" href="register.html">Đăng ký thành viên để giữ chỗ</a>
+        </footer>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <p>EduHub Web · Trường Đại học Đồng Tháp · 783 Phạm Hữu Lầu, Cao Lãnh, Đồng Tháp</p>
+        <p>Liên hệ: <a href="mailto:eduhub@dthu.edu.vn">eduhub@dthu.edu.vn</a></p>
+        <p><small>Bài thực hành môn IN4529 — Lập trình Front End.</small></p>
+      </div>
+    </footer>
+  </body>
+</html>

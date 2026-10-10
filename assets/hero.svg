@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="500" viewBox="0 0 1200 500" role="img" aria-label="Minh hoạ sinh viên tham gia hoạt động câu lạc bộ">
+  <rect width="1200" height="500" fill="#F0F7FF"/>
+  <circle cx="1050" cy="90" r="180" fill="#00C4CC" fill-opacity="0.18"/>
+  <circle cx="140" cy="460" r="200" fill="#003F87" fill-opacity="0.10"/>
+  <rect x="380" y="330" width="440" height="24" rx="12" fill="#001D45" fill-opacity="0.15"/>
+  <g>
+    <circle cx="470" cy="210" r="40" fill="#003F87"/>
+    <rect x="425" y="255" width="90" height="80" rx="30" fill="#003F87"/>
+    <circle cx="600" cy="190" r="46" fill="#00C4CC"/>
+    <rect x="548" y="242" width="104" height="94" rx="34" fill="#00C4CC"/>
+    <circle cx="730" cy="210" r="40" fill="#001D45"/>
+    <rect x="685" y="255" width="90" height="80" rx="30" fill="#001D45"/>
+  </g>
+  <g fill="#003F87">
+    <rect x="160" y="90" width="150" height="100" rx="14" fill="#FFFFFF" stroke="#003F87" stroke-width="4"/>
+    <text x="235" y="152" font-family="system-ui, sans-serif" font-size="36" font-weight="700" text-anchor="middle">CLB</text>
+    <rect x="890" y="250" width="170" height="100" rx="14" fill="#FFFFFF" stroke="#00C4CC" stroke-width="4"/>
+    <text x="975" y="312" font-family="system-ui, sans-serif" font-size="32" font-weight="700" text-anchor="middle">Sự kiện</text>
+  </g>
+</svg>

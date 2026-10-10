@@ -1,0 +1,9 @@
+/* ==========================================================================
+   main.css — tệp duy nhất mà HTML liên kết tới (đã có sẵn <link> trong 4 trang)
+   ========================================================================== */
+
+/* TODO(ch2-T2): Khai báo thứ tự lớp cascade, lớp viết SAU sẽ thắng lớp viết TRƯỚC:
+     @layer tokens, base, layout, components;
+   Sau đó @import 4 tệp vào đúng lớp của nó, ví dụ:
+     @import url("tokens.css") layer(tokens);
+   Lưu ý: @import phải đứng đầu tệp, chỉ dòng @layer được đứng trước. */

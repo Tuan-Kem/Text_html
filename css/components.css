@@ -1,0 +1,48 @@
+/* ==========================================================================
+   components.css — các khối giao diện dùng lại được
+   Đặt tên kiểu BEM: block__element--modifier. Dùng nesting gốc (&) để gom kiểu.
+   Ví dụ nesting:
+     .btn {
+       padding: var(--space-2) var(--space-6);
+       &:hover { translate: 0 -1px; }
+     }
+   ========================================================================== */
+
+/* TODO(ch2-T3): .skip-link — đẩy ra khỏi màn hình (translate: 0 -200%), hiện lại khi :focus-visible */
+
+/* TODO(ch2-T3): .brand (logo + chữ, inline-flex), .brand__logo (2.25rem), .brand__name span tô màu nhấn */
+
+/* TODO(ch2-T3): .site-nav__link — viên thuốc bo tròn, cao ≥ 2.75rem (44px);
+   &[aria-current="page"] nền --color-accent để biết đang ở trang nào */
+
+/* TODO(ch2-T3): .btn + .btn--primary / .btn--accent / .btn--ghost, cao ≥ 2.75rem, có transition khi hover;
+   .btn-row xếp nút bằng Flexbox; .hero__eyebrow, .hero__lead, .hero__media */
+
+/* TODO(ch2-T4): .tag (nhãn CLB) và .badge.badge--hot (nhãn "Sắp hết chỗ" màu cảnh báo,
+   ★ chấm tròn nhấp nháy bằng ::before + @keyframes) */
+
+/* TODO(ch2-T4): .card — flex cột, viền, bo góc, nền --color-surface, bóng; hover nhấc lên có transition.
+   &:has(.badge--hot) → viền màu --color-warning (KHÔNG thêm class mới vào HTML).
+   .card__media: aspect-ratio 16/9 + object-fit: cover.
+   .card__body: flex: 1 để card cùng hàng cao bằng nhau. .card__meta, .card__title, .card__text.
+   ★ .card__title a::after { position: absolute; inset: 0 } để bấm cả card. */
+
+/* TODO(ch2-T4): .event-card__info, .event-card__seats (margin-block-start: auto để nằm đáy card);
+   .club-card (viền trên màu nhấn) */
+
+/* TODO(ch2-T4): .faq và .faq__item — summary bỏ tam giác mặc định (list-style: none),
+   thêm dấu "+" bằng ::after, &[open] thì xoay 45deg */
+
+/* TODO(ch2-T5): .table-wrap { overflow-x: auto } và .table (min-inline-size ~40rem, viền, hàng chẵn tô nền,
+   cột số căn phải) — bảng cuộn trong khung, trang không cuộn ngang */
+
+/* TODO(ch2-T5): .back-link, .detail__media, .detail__organizer, .prose (h2, ol/ul, li::marker),
+   .info-card với dl dàn Grid 2 cột (grid-template-columns: auto 1fr), .cta */
+
+/* TODO(ch2-T6): .form (thẻ nền surface, bo góc), fieldset (bỏ viền, min-inline-size: 0), legend.
+   .form__grid: 1 cột, từ 40rem 2 cột. .field: Grid, align-content: start;
+   input/select/textarea full width, cao ≥ 2.75rem, &:focus-visible và &:user-invalid (viền --color-danger).
+   .field--full chiếm cả hàng (grid-column: 1 / -1). */
+
+/* TODO(ch2-T6): .choice-group__options (Flexbox), .choice viên thuốc;
+   .choice:has(input:checked) tô nền; .field--check cho ô đồng ý */

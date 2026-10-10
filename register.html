@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Đăng ký thành viên · EduHub Web</title>
+    <meta name="description" content="Đăng ký tài khoản thành viên EduHub Web dành cho sinh viên Trường Đại học Đồng Tháp.">
+    <!-- Open Graph: thay "ten-tai-khoan" bằng tên tài khoản GitHub sau khi bật GitHub Pages -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="EduHub Web">
+    <meta property="og:title" content="Đăng ký thành viên · EduHub Web">
+    <meta property="og:description" content="Đăng ký tài khoản thành viên EduHub Web dành cho sinh viên Trường Đại học Đồng Tháp.">
+    <meta property="og:url" content="https://ten-tai-khoan.github.io/eduhub-web/register.html">
+    <meta property="og:image" content="https://ten-tai-khoan.github.io/eduhub-web/assets/og-image.png">
+    <meta property="og:locale" content="vi_VN">
+    <meta name="theme-color" content="#001D45">
+    <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+    <!-- Ch02: một tệp CSS duy nhất, main.css tự @import các lớp còn lại -->
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#noi-dung">Bỏ qua, đến nội dung chính</a>
+
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a class="brand" href="index.html">
+          <img class="brand__logo" src="assets/logo.svg" alt="" width="48" height="48">
+          <span class="brand__name">Edu<span>Hub</span></span>
+        </a>
+        <nav class="site-nav" aria-label="Điều hướng chính">
+          <ul class="site-nav__list">
+          <li><a class="site-nav__link" href="index.html">Trang chủ</a></li>
+          <li><a class="site-nav__link" href="events.html">Sự kiện</a></li>
+          <li><a class="site-nav__link" href="index.html#cau-lac-bo">Câu lạc bộ</a></li>
+          <li><a class="site-nav__link" href="register.html" aria-current="page">Đăng ký thành viên</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="noi-dung" class="container page page--narrow">
+      <h1>Đăng ký thành viên</h1>
+      <p class="page__intro">Điền thông tin bên dưới. Ô có dấu <abbr title="bắt buộc">*</abbr> là bắt buộc.</p>
+
+      <!-- Chưa có server: form gửi bằng GET để thấy dữ liệu trên thanh địa chỉ. Ch03 sẽ gửi tới API. -->
+      <form class="form" action="register.html" method="get">
+        <fieldset>
+          <legend>Thông tin sinh viên</legend>
+
+          <div class="form__grid">
+            <p class="field">
+              <label for="student-id">Mã số sinh viên <abbr title="bắt buộc">*</abbr></label>
+              <input id="student-id" name="studentId" type="text" inputmode="numeric"
+                     required pattern="[0-9]{10}" maxlength="10"
+                     aria-describedby="student-id-hint" autocomplete="off">
+              <small id="student-id-hint">Gồm đúng 10 chữ số, ví dụ 0024410123.</small>
+            </p>
+
+            <p class="field">
+              <label for="full-name">Họ và tên <abbr title="bắt buộc">*</abbr></label>
+              <input id="full-name" name="name" type="text" required minlength="2" maxlength="100" autocomplete="name">
+            </p>
+
+            <p class="field field--full">
+              <label for="email">Email <abbr title="bắt buộc">*</abbr></label>
+              <input id="email" name="email" type="email" required autocomplete="email"
+                     placeholder="mssv@sv.dthu.edu.vn">
+            </p>
+
+            <p class="field">
+              <label for="password">Mật khẩu <abbr title="bắt buộc">*</abbr></label>
+              <input id="password" name="password" type="password" required minlength="8"
+                     autocomplete="new-password" aria-describedby="password-hint">
+              <small id="password-hint">Ít nhất 8 ký tự.</small>
+            </p>
+
+            <p class="field">
+              <label for="birth-date">Ngày sinh</label>
+              <input id="birth-date" name="birthDate" type="date" min="1980-01-01" max="2010-12-31">
+            </p>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Sở thích</legend>
+
+          <p class="field">
+            <label for="club">Câu lạc bộ muốn tham gia</label>
+            <select id="club" name="club">
+              <option value="">— Chưa chọn —</option>
+              <option value="Tin học">CLB Tin học</option>
+              <option value="Tình nguyện">CLB Tình nguyện</option>
+              <option value="Tiếng Anh">CLB Tiếng Anh</option>
+              <option value="Âm nhạc">CLB Âm nhạc</option>
+              <option value="Bóng đá">CLB Bóng đá</option>
+              <option value="Kỹ năng mềm">CLB Kỹ năng mềm</option>
+            </select>
+          </p>
+
+          <fieldset class="choice-group">
+            <legend>Năm học hiện tại</legend>
+            <div class="choice-group__options">
+              <label class="choice"><input id="year-1" name="year" type="radio" value="1" checked> Năm 1</label>
+              <label class="choice"><input id="year-2" name="year" type="radio" value="2"> Năm 2</label>
+              <label class="choice"><input id="year-3" name="year" type="radio" value="3"> Năm 3</label>
+              <label class="choice"><input id="year-4" name="year" type="radio" value="4"> Năm 4</label>
+            </div>
+          </fieldset>
+
+          <p class="field">
+            <label for="intro">Giới thiệu ngắn về bản thân</label>
+            <textarea id="intro" name="intro" rows="4" maxlength="500"></textarea>
+          </p>
+        </fieldset>
+
+        <p class="field--check">
+          <input id="agree" name="agree" type="checkbox" required>
+          <label for="agree">Tôi đồng ý với nội quy sinh hoạt câu lạc bộ <abbr title="bắt buộc">*</abbr></label>
+        </p>
+
+        <p class="btn-row">
+          <button class="btn btn--primary" type="submit">Đăng ký</button>
+          <button class="btn btn--ghost" type="reset">Nhập lại</button>
+        </p>
+      </form>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <p>EduHub Web · Trường Đại học Đồng Tháp · 783 Phạm Hữu Lầu, Cao Lãnh, Đồng Tháp</p>
+        <p>Liên hệ: <a href="mailto:eduhub@dthu.edu.vn">eduhub@dthu.edu.vn</a></p>
+        <p><small>Bài thực hành môn IN4529 — Lập trình Front End.</small></p>
+      </div>
+    </footer>
+  </body>
+</html>

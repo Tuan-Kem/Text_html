@@ -1,0 +1,20 @@
+/* ==========================================================================
+   base.css — đặt lại mặc định của trình duyệt + kiểu cho thẻ HTML trần
+   Chỉ dùng selector thẻ (body, h1, a, img…), chưa dùng class.
+   ========================================================================== */
+
+/* TODO(ch2-T2): box-sizing: border-box cho *, *::before, *::after */
+
+/* TODO(ch2-T2): Bỏ margin mặc định bằng :where(body, h1, h2, h3, p, ul, ol, dl, dd, figure, fieldset)
+   (:where() có specificity 0 nên các lớp sau ghi đè dễ dàng) */
+
+/* TODO(ch2-T2): body — font, cỡ chữ, line-height, màu chữ, màu nền lấy từ token;
+   display: flex + flex-direction: column, và main { flex: 1 } để footer luôn ở đáy */
+
+/* TODO(ch2-T2): Tiêu đề h1/h2/h3 dùng thang chữ token; img/svg { display: block; max-inline-size: 100%; block-size: auto } */
+
+/* TODO(ch2-T2): input, button, select, textarea kế thừa font (font: inherit) */
+
+/* TODO(ch2-T2): :focus-visible — outline 3px màu --color-focus, outline-offset 2px */
+
+/* TODO(ch2-T2): @media (prefers-reduced-motion: reduce) — tắt animation/transition, scroll-behavior: auto */

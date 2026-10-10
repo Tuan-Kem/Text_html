@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img" aria-label="Biểu tượng CLB Âm nhạc">
+  <rect width="640" height="360" fill="#C2410C"/>
+  <circle cx="520" cy="70" r="140" fill="#FFFFFF" fill-opacity="0.08"/>
+  <circle cx="90" cy="320" r="110" fill="#00C4CC" fill-opacity="0.25"/>
+  <text x="320" y="190" font-family="system-ui, sans-serif" font-size="110" font-weight="700" fill="#FFFFFF" text-anchor="middle">♪</text>
+  <text x="320" y="290" font-family="system-ui, sans-serif" font-size="40" font-weight="600" fill="#F0F7FF" text-anchor="middle">CLB Âm nhạc</text>
+</svg>
